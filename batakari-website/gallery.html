@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Batakari Fugu | Gallery</title>
+  <meta name="description" content="Explore our stunning gallery of authentic Batakari and Fugu outfits." />
+  <link rel="stylesheet" href="css/global.css" />
+  <link rel="stylesheet" href="css/gallery.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,500&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <a href="index.html" class="brand">
+      <span class="brand-icon">B</span>
+      <span class="brand-text">Batakari Fugu</span>
+    </a>
+    <ul class="nav-menu" id="navMenu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="gallery.html" class="active">Gallery</a></li>
+      <li><a href="shop.html">Shop</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="header-actions">
+      <a href="#" class="icon-btn" aria-label="Shopping cart">
+        <i class="fa fa-shopping-cart"></i>
+        <span class="badge">3</span>
+      </a>
+      <a href="login.html" class="btn-solid">Login</a>
+    </div>
+    <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation">
+      <i class="fa fa-bars"></i>
+    </button>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <div class="page-hero-content container">
+      <h1>Our Gallery</h1>
+      <p>Explore our stunning collection of traditional Batakari and Fugu outfits. Each piece tells a unique story of Ghanaian heritage.</p>
+    </div>
+  </div>
+
+  <main class="gallery-page container">
+
+    <!-- CATEGORY FILTER TABS -->
+    <div class="gallery-tabs" id="galleryTabs">
+      <button class="gallery-tab active" data-target="all">All</button>
+      <button class="gallery-tab" data-target="couples">Couples</button>
+      <button class="gallery-tab" data-target="mens">Men's</button>
+      <button class="gallery-tab" data-target="womens">Women's</button>
+      <button class="gallery-tab" data-target="fabrics">Fabrics</button>
+      <button class="gallery-tab" data-target="kids">Kids</button>
+    </div>
+
+    <!-- ALL SECTIONS WRAPPER -->
+    <div id="gallerySections">
+
+      <!-- COUPLES SECTION -->
+      <section class="gallery-category" id="couples">
+        <div class="category-header">
+          <h2>Couples Collection</h2>
+          <p>Matching traditional wear for couples — perfect for ceremonies and celebrations.</p>
+          <div class="title-line"></div>
+        </div>
+        <div class="gallery-grid">
+          <div class="gallery-item" data-title="Heritage Couple Set" data-cat="Couples">
+            <img src="images/0b21a703bb68399aa8e395e0e3331885.jpg" alt="Couple in matching Batakari" />
+            <div class="gallery-overlay">
+              <div class="gallery-overlay-icon"><i class="fa fa-expand"></i></div>
+              <div class="gallery-overlay-title">Heritage Couple Set</div>
+              <div class="gallery-overlay-sub">Couples Collection</div>
+              <div class="gallery-overlay-desc">Matching Batakari outfits for couples — perfect for weddings and ceremonies.</div>
+            </div>
+          </div>
+          <div class="gallery-item" data-title="Royal Couple Wear" data-cat="Couples">
+            <img src="images/1149c0d470f483a06438ba19ed87cb13.jpg" alt="Royal couple Batakari" />
+            <div class="gallery-overlay">
+              <div class="gallery-overlay-icon"><i class="fa fa-expand"></i></div>
+              <div class="gallery-overlay-title">Royal Couple Wear</div>
+              <div class="gallery-overlay-sub">Couples Collection</div>
+              <div class="gallery-overlay-desc">Elegant coordinated traditional wear for couples celebrating special moments.</div>
+            </div>
+          </div>
+          <div class="gallery-item" data-title="Ceremony Matching Set" data-cat="Couples">
+            <img src="images/201a26423a1c6967eba4c18f448066d5.jpg" alt="Ceremony couple outfit" />
+            <div class="gallery-overlay">
+              <div class="gallery-overlay-icon"><i class="fa fa-expand"></i></div>
+              <div class="gallery-overlay-title">Ceremony Matching Set</div>
+              <div class="gallery-overlay-sub">Couples Collection</div>
+              <div class="gallery-overlay-desc">Handwoven matching sets designed for traditional ceremonies and celebrations.</div>
+            </div>
+          </div>
+          <div class="gallery-item" data-title="Striped Couple Fugu" data-cat="Couples">
+            <img src="images/23264b2df4a3fa6eec5d2464f5a7d1fa.jpg" alt="Striped couple fugu" />
+            <div class="gallery-overlay">
+              <div class="gallery-overlay-icon"><i class="fa fa-expand"></i></div>
+              <div class="gallery-overlay-title">Striped Couple Fugu</div>
+              <div class="gallery-overlay-sub">Couples Collection</div>
+              <div class="gallery-overlay-desc">Bold striped Fugu smocks in matching colours — a statement couple's look.</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- MEN'S SECTION — tall portrait images, large files -->
+      <section class="gallery-category" id="mens">
+        <div class="category-header">
+          <h2>Men's Collection</h2>
+          <p>Bold, classic and elegant Batakari styles crafted for the modern Ghanaian man.</p>
+          <div class="title-line"></div>
+        </div>
+        <div class="gallery-grid">
+          <div class="gallery-item" data-title="Classic Batakari" data-cat="Men's">
+            <img src="images/4db96bc37f273d48330c683a3e09961d.jpg" alt="Classic men's Batakari" />
+            <div class="gallery-overlay">
+              <div class="gallery-overlay-icon"><i class="fa fa-expand"></i></div>
+              <div class="gallery-overlay-title">Classic Batakari</div>
+              <div class="gallery-overlay-sub">Men's Collection</div>
+              <div class="gallery-overlay-desc">Timeless handwoven Batakari for men — crafted with local cotton and natural dyes.</div>
+            </div>
+          </div>
+          <div class="gallery-item" data-title="Royal Fugu Smock" data-cat="Men's">
+            <img src="images/76f0aa7771608b1912cdba3c8575cc8a.jpg" alt="Royal men's Fugu" />
+            <div class="gallery-overlay">
+              <div class="gallery-overlay-icon"><i class="fa fa-expand"></i></div>
+              <div class="gallery-overlay-title">Royal Fugu Smock</div>
+              <div class="gallery-overlay-sub">Men's Collection</div>
+              <div class="gallery-overlay-desc">Premium Fugu smock with bold patterns — a powerful statement of Ghanaian pride.</div>
+            </div>
+          </div>
+          <div class="gallery-item" data-title="Heritage Batakari" data-cat="Men's">
+            <img src="images/b6abb5f51446db31119280c789416b36.jpg" alt="Heritage men's Batakari" />
+            <div class="gallery-overlay">
+              <div class="gallery-overlay-icon"><i class="fa fa-expand"></i></div>
+              <div class="gallery-overlay-title">Heritage Batakari</div>
+              <div class="gallery-overlay-sub">Men's Collection</div>
+              <div class="gallery-overlay-desc">A heritage-inspired design woven by skilled northern Ghana artisans.</div>
+            </div>
+          </div>
+          <div class="gallery-item" data-title="Traditional Design" data-cat="Men's">
+            <img src="images/a694b9b87380e4d255208f4364aa0f94.jpg" alt="Traditional men's design" />
+            <div class="gallery-overlay">
+              <div class="gallery-overlay-icon"><i class="fa fa-expand"></i></div>
+              <div class="gallery-overlay-title">Traditional Design</div>
+              <div class="gallery-overlay-sub">Men's Collection</div>
+              <div class="gallery-overlay-desc">Classic traditional Batakari design — perfect for cultural events and everyday wear.</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- WOMEN'S SECTION — medium portrait images -->
+      <section class="gallery-category" id="womens">
+        <div class="category-header">
+          <h2>Women's Collection</h2>
+          <p>Graceful and vibrant Batakari styles designed to celebrate the Ghanaian woman.</p>
+          <div class="title-line"></div>
+        </div>
+        <div class="gallery-grid">
+          <div class="gallery-item" data-title="Women's Batakari" data-cat="Women's">
+            <img src="images/511618907c068a9b1cbd8e327b0069de.jpg" alt="Women's Batakari" />
+            <div class="gallery-overlay">
+              <div class="gallery-overlay-icon"><i class="fa fa-expand"></i></div>
+              <div class="gallery-overlay-title">Women's Batakari</div>
+              <div class="gallery-overlay-sub">Women's Collection</div>
+              <div class="gallery-overlay-desc">Graceful and vibrant Batakari designed to celebrate the modern Ghanaian woman.</div>
+            </div>
+          </div>
+          <div class="gallery-item" data-title="Elegant Fugu Dress" data-cat="Women's">
+            <img src="images/712b0d2314fec4deb9ff37b4766fae13.jpg" alt="Elegant women's Fugu" />
+            <div class="gallery-overlay">
+              <div class="gallery-overlay-icon"><i class="fa fa-expand"></i></div>
+              <div class="gallery-overlay-title">Elegant Fugu Dress</div>
+              <div class="gallery-overlay-sub">Women's Collection</div>
+              <div class="gallery-overlay-desc">A stunning Fugu dress with flowing silhouette — ideal for formal occasions.</div>
+            </div>
+          </div>
+          <div class="gallery-item" data-title="Festival Wear" data-cat="Women's">
+            <img src="images/a023aec52e08bc0b698b623ec5c582a9.jpg" alt="Women's festival wear" />
+            <div class="gallery-overlay">
+              <div class="gallery-overlay-icon"><i class="fa fa-expand"></i></div>
+              <div class="gallery-overlay-title">Festival Wear</div>
+              <div class="gallery-overlay-sub">Women's Collection</div>
+              <div class="gallery-overlay-desc">Colourful and expressive Batakari made to shine at festivals and celebrations.</div>
+            </div>
+          </div>
+          <div class="gallery-item" data-title="Colourful Batakari Gown" data-cat="Women's">
+            <img src="images/b897e2b3c7170d490a44da80c05c5fc2.jpg" alt="Colourful women's Batakari" />
+            <div class="gallery-overlay">
+              <div class="gallery-overlay-icon"><i class="fa fa-expand"></i></div>
+              <div class="gallery-overlay-title">Colourful Batakari Gown</div>
+              <div class="gallery-overlay-sub">Women's Collection</div>
+              <div class="gallery-overlay-desc">A bold, multi-coloured Batakari gown that blends tradition with modern style.</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FABRICS SECTION — landscape/square images -->
+      <section class="gallery-category" id="fabrics">
+        <div class="category-header">
+          <h2>Fabrics Collection</h2>
+          <p>Handwoven and hand-dyed fabrics sourced from skilled artisans across northern Ghana.</p>
+          <div class="title-line"></div>
+        </div>
+        <div class="gallery-grid">
+          <div class="gallery-item" data-title="Woven Batakari Fabric" data-cat="Fabrics">
+            <img src="images/4072cdf00c1140aeb5ccd8c990608240.jpg" alt="Woven Batakari fabric" />
+            <div class="gallery-overlay">
+              <div class="gallery-overlay-icon"><i class="fa fa-expand"></i></div>
+              <div class="gallery-overlay-title">Woven Batakari Fabric</div>
+              <div class="gallery-overlay-sub">Fabrics Collection</div>
+              <div class="gallery-overlay-desc">Authentic handwoven Batakari fabric — available for custom tailoring orders.</div>
+            </div>
+          </div>
+          <div class="gallery-item" data-title="Kente Strip Fabric" data-cat="Fabrics">
+            <img src="images/ac0b908e136b5d8361c4d23fddbb679b.jpg" alt="Kente strip fabric" />
+            <div class="gallery-overlay">
+              <div class="gallery-overlay-icon"><i class="fa fa-expand"></i></div>
+              <div class="gallery-overlay-title">Kente Strip Fabric</div>
+              <div class="gallery-overlay-sub">Fabrics Collection</div>
+              <div class="gallery-overlay-desc">Vibrant Kente-inspired strips woven by skilled artisans in northern Ghana.</div>
+            </div>
+          </div>
+          <div class="gallery-item" data-title="Traditional Fugu Cloth" data-cat="Fabrics">
+            <img src="images/td.jpg" alt="Traditional Fugu cloth" />
+            <div class="gallery-overlay">
+              <div class="gallery-overlay-icon"><i class="fa fa-expand"></i></div>
+              <div class="gallery-overlay-title">Traditional Fugu Cloth</div>
+              <div class="gallery-overlay-sub">Fabrics Collection</div>
+              <div class="gallery-overlay-desc">Classic Fugu cloth with traditional stripe patterns — the foundation of every outfit.</div>
+            </div>
+          </div>
+          <div class="gallery-item" data-title="Artisan Woven Cloth" data-cat="Fabrics">
+            <img src="images/tr.jpg" alt="Artisan woven cloth" />
+            <div class="gallery-overlay">
+              <div class="gallery-overlay-icon"><i class="fa fa-expand"></i></div>
+              <div class="gallery-overlay-title">Artisan Woven Cloth</div>
+              <div class="gallery-overlay-sub">Fabrics Collection</div>
+              <div class="gallery-overlay-desc">Hand-dyed artisan cloth with rich colours — each roll is one of a kind.</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- KIDS SECTION — smaller portrait images -->
+      <section class="gallery-category" id="kids">
+        <div class="category-header">
+          <h2>Kids Collection</h2>
+          <p>Adorable traditional wear for the little ones — keeping culture alive from a young age.</p>
+          <div class="title-line"></div>
+        </div>
+        <div class="gallery-grid">
+          <div class="gallery-item" data-title="Kids Batakari" data-cat="Kids">
+            <img src="images/cc01bc0a153cbcd5cad520aebba1240b.jpg" alt="Kids Batakari outfit" />
+            <div class="gallery-overlay">
+              <div class="gallery-overlay-icon"><i class="fa fa-expand"></i></div>
+              <div class="gallery-overlay-title">Kids Batakari</div>
+              <div class="gallery-overlay-sub">Kids Collection</div>
+              <div class="gallery-overlay-desc">Adorable Batakari for children — keeping Ghanaian culture alive from a young age.</div>
+            </div>
+          </div>
+          <div class="gallery-item" data-title="Mini Fugu" data-cat="Kids">
+            <img src="images/dd2125ffe4f4437f67f6cdfdf13caa09.jpg" alt="Mini Fugu for kids" />
+            <div class="gallery-overlay">
+              <div class="gallery-overlay-icon"><i class="fa fa-expand"></i></div>
+              <div class="gallery-overlay-title">Mini Fugu</div>
+              <div class="gallery-overlay-sub">Kids Collection</div>
+              <div class="gallery-overlay-desc">A miniature Fugu smock for the little ones — same quality, smaller size.</div>
+            </div>
+          </div>
+          <div class="gallery-item" data-title="Junior Heritage Set" data-cat="Kids">
+            <img src="images/e5dd1d9ed1c7c1352101ce9a1a286bd0.jpg" alt="Junior heritage set" />
+            <div class="gallery-overlay">
+              <div class="gallery-overlay-icon"><i class="fa fa-expand"></i></div>
+              <div class="gallery-overlay-title">Junior Heritage Set</div>
+              <div class="gallery-overlay-sub">Kids Collection</div>
+              <div class="gallery-overlay-desc">A complete junior heritage set — handwoven and tailored for young ones.</div>
+            </div>
+          </div>
+          <div class="gallery-item" data-title="Little Royals" data-cat="Kids">
+            <img src="images/366622075302d441f88d558665d2a3cd.jpg" alt="Little royals kids wear" />
+            <div class="gallery-overlay">
+              <div class="gallery-overlay-icon"><i class="fa fa-expand"></i></div>
+              <div class="gallery-overlay-title">Little Royals</div>
+              <div class="gallery-overlay-sub">Kids Collection</div>
+              <div class="gallery-overlay-desc">Dress your little royals in authentic traditional wear — fit for any occasion.</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div><!-- end gallerySections -->
+
+    <div style="text-align:center; margin-top:56px; margin-bottom:16px;">
+      <a href="shop.html" class="btn-solid"><i class="fa fa-shopping-bag"></i> Shop These Styles</a>
+    </div>
+
+  </main>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close"><i class="fa fa-times"></i></button>
+    <div class="lightbox-content">
+      <img id="lightboxImg" src="" alt="Gallery image" />
+      <div class="lightbox-caption" id="lightboxCaption"></div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-top">
+      <div class="footer-inner">
+        <div class="footer-col">
+          <div class="footer-brand-name">
+            <span class="brand-icon">B</span>
+            Batakari Fugu
+          </div>
+          <p>Preserving Ghana's rich cultural heritage through authentic traditional wear, handcrafted with love and pride.</p>
+          <div class="social-icons">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact Us</h4>
+          <div class="contact-item"><i class="fa fa-map-marker-alt"></i> Accra Central, Ghana</div>
+          <div class="contact-item"><i class="fa fa-phone"></i> +233 24 123 4567</div>
+          <div class="contact-item"><i class="fa fa-envelope"></i> info@batakarifugu.com</div>
+          <div class="contact-item"><i class="fa fa-clock"></i> Mon–Sat, 8am–6pm</div>
+        </div>
+        <div class="footer-col">
+          <h4>Newsletter</h4>
+          <p>Get updates on new collections and exclusive offers.</p>
+          <div class="newsletter-form" style="margin-top:16px;">
+            <input type="email" placeholder="Your email address" aria-label="Newsletter email" />
+            <button type="button">Join</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr class="footer-divider" />
+    <div class="footer-bottom">
+      © 2026 Batakari Fugu. All rights reserved. Crafted with love in Ghana 🇬🇭
+    </div>
+  </footer>
+
+  <script>
+    // Mobile nav
+    const toggle = document.getElementById('mobileToggle');
+    const menu = document.getElementById('navMenu');
+    toggle.addEventListener('click', () => menu.classList.toggle('open'));
+
+    // --- CATEGORY FILTER TABS ---
+    const tabs = document.querySelectorAll('.gallery-tab');
+    const sections = document.querySelectorAll('.gallery-category');
+
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        // Update active tab
+        tabs.forEach(t => t.classList.remove('active'));
+        tab.classList.add('active');
+
+        const target = tab.dataset.target;
+
+        if (target === 'all') {
+          // Show all sections
+          sections.forEach(s => s.classList.remove('hidden'));
+          // Scroll to top of gallery
+          document.getElementById('gallerySections').scrollIntoView({ behavior: 'smooth', block: 'start' });
+        } else {
+          // Hide all, show only the target section
+          sections.forEach(s => s.classList.add('hidden'));
+          const targetSection = document.getElementById(target);
+          if (targetSection) {
+            targetSection.classList.remove('hidden');
+            // Scroll to the section smoothly
+            setTimeout(() => {
+              targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }, 50);
+          }
+        }
+      });
+    });
+
+    // --- SORT GALLERY BY DESCRIPTION ---
+    function sortGalleryByDescription() {
+      document.querySelectorAll('.gallery-category').forEach(category => {
+        const grid = category.querySelector('.gallery-grid');
+        if (!grid) return;
+
+        const items = Array.from(grid.children);
+        items.sort((a, b) => {
+          const aText = a.querySelector('.gallery-overlay-title')?.textContent.trim() || '';
+          const bText = b.querySelector('.gallery-overlay-title')?.textContent.trim() || '';
+          return aText.localeCompare(bText, undefined, { sensitivity: 'base' });
+        });
+
+        items.forEach(item => grid.appendChild(item));
+      });
+    }
+
+    sortGalleryByDescription();
+
+    // --- LIGHTBOX ---
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightboxImg');
+    const lightboxCaption = document.getElementById('lightboxCaption');
+
+    document.querySelectorAll('.gallery-item').forEach(item => {
+      item.addEventListener('click', () => {
+        const img = item.querySelector('img');
+        const title = item.dataset.title || '';
+        const cat = item.dataset.cat || '';
+        lightboxImg.src = img.src;
+        lightboxImg.alt = img.alt;
+        lightboxCaption.textContent = title + (cat ? ' — ' + cat : '');
+        lightbox.classList.add('open');
+        document.body.style.overflow = 'hidden';
+      });
+    });
+
+    document.getElementById('lightboxClose').addEventListener('click', closeLightbox);
+    lightbox.addEventListener('click', e => { if (e.target === lightbox) closeLightbox(); });
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); });
+
+    function closeLightbox() {
+      lightbox.classList.remove('open');
+      document.body.style.overflow = '';
+    }
+  </script>
+</body>
+</html>

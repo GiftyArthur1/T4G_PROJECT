@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Batakari Fugu | Classic Batakari</title>
+  <meta name="description" content="Handwoven Classic Batakari crafted with local cotton and natural dyes." />
+  <link rel="stylesheet" href="css/global.css" />
+  <link rel="stylesheet" href="css/product.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,500&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <a href="index.html" class="brand">
+      <span class="brand-icon">B</span>
+      <span class="brand-text">Batakari Fugu</span>
+    </a>
+    <ul class="nav-menu" id="navMenu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="shop.html" class="active">Shop</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="header-actions">
+      <a href="#" class="icon-btn" aria-label="Shopping cart">
+        <i class="fa fa-shopping-cart"></i>
+        <span class="badge">3</span>
+      </a>
+      <a href="login.html" class="btn-solid">Login</a>
+    </div>
+    <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation">
+      <i class="fa fa-bars"></i>
+    </button>
+  </nav>
+
+  <main class="product-section container">
+
+    <!-- Breadcrumb -->
+    <div class="product-breadcrumb">
+      <a href="index.html"><i class="fa fa-home"></i> Home</a>
+      <i class="fa fa-chevron-right"></i>
+      <a href="shop.html">Shop</a>
+      <i class="fa fa-chevron-right"></i>
+      <span>Classic Batakari</span>
+    </div>
+
+    <!-- Product Layout -->
+    <div class="product-layout">
+
+      <!-- ── IMAGE GALLERY ── -->
+      <div class="product-gallery reveal-left">
+        <div class="product-main-image">
+          <div class="product-discount-ribbon">22% OFF</div>
+          <img id="mainImg" src="images/511618907c068a9b1cbd8e327b0069de.jpg" alt="Classic Batakari" />
+        </div>
+        <div class="product-thumbs">
+          <div class="product-thumb active" onclick="switchImg(this,'images/511618907c068a9b1cbd8e327b0069de.jpg')">
+            <img src="images/511618907c068a9b1cbd8e327b0069de.jpg" alt="View 1" />
+          </div>
+          <div class="product-thumb" onclick="switchImg(this,'images/4db96bc37f273d48330c683a3e09961d.jpg')">
+            <img src="images/4db96bc37f273d48330c683a3e09961d.jpg" alt="View 2" />
+          </div>
+          <div class="product-thumb" onclick="switchImg(this,'images/a694b9b87380e4d255208f4364aa0f94.jpg')">
+            <img src="images/a694b9b87380e4d255208f4364aa0f94.jpg" alt="View 3" />
+          </div>
+          <div class="product-thumb" onclick="switchImg(this,'images/b6abb5f51446db31119280c789416b36.jpg')">
+            <img src="images/b6abb5f51446db31119280c789416b36.jpg" alt="View 4" />
+          </div>
+        </div>
+      </div>
+
+      <!-- ── PRODUCT INFO ── -->
+      <div class="product-info reveal-right">
+
+        <div class="product-category-tag">
+          <i class="fa fa-tag"></i> Men's Collection
+        </div>
+
+        <h1>Classic Batakari</h1>
+
+        <div class="product-rating">
+          <div class="stars">
+            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+          </div>
+          <span class="score">4.9</span>
+          <span class="divider">|</span>
+          <span class="count">24 reviews</span>
+          <span class="divider">|</span>
+          <span class="sold">120+ sold</span>
+        </div>
+
+        <div class="product-price-row">
+          <div class="product-price">₵450</div>
+          <div class="product-price-original">₵580</div>
+          <div class="product-price-save">Save ₵130</div>
+        </div>
+
+        <p class="product-description">
+          Handwoven Batakari crafted with local cotton and natural dyes. Inspired by traditional northern Ghana garments and tailored for modern comfort. Each piece is unique — no two are exactly alike. Worn by kings, celebrated by culture.
+        </p>
+
+        <hr class="product-divider" />
+
+        <!-- Size -->
+        <div class="product-option-row">
+          <div class="product-option-label">
+            Select Size <span>— M selected</span>
+          </div>
+          <div class="size-options">
+            <button class="size-btn">XS</button>
+            <button class="size-btn">S</button>
+            <button class="size-btn active">M</button>
+            <button class="size-btn">L</button>
+            <button class="size-btn">XL</button>
+            <button class="size-btn">XXL</button>
+          </div>
+        </div>
+
+        <!-- Quantity -->
+        <div class="product-option-row">
+          <div class="product-option-label">Quantity</div>
+          <div class="qty-selector">
+            <button class="qty-btn" onclick="changeQty(-1)"><i class="fa fa-minus"></i></button>
+            <input class="qty-input" id="qty" type="number" value="1" min="1" readonly />
+            <button class="qty-btn" onclick="changeQty(1)"><i class="fa fa-plus"></i></button>
+          </div>
+        </div>
+
+        <!-- Actions -->
+        <div class="product-actions">
+          <button class="btn-solid">
+            <i class="fa fa-shopping-cart"></i> Add to Cart
+          </button>
+          <button class="btn-buy">
+            <i class="fa fa-bolt"></i> Buy Now
+          </button>
+          <button class="wishlist-btn" aria-label="Add to wishlist">
+            <i class="fa fa-heart"></i>
+          </button>
+        </div>
+
+        <!-- Features -->
+        <div class="product-features">
+          <div class="product-feature">
+            <i class="fa fa-shield-alt"></i> 100% Authentic
+          </div>
+          <div class="product-feature">
+            <i class="fa fa-truck"></i> Free Delivery ₵500+
+          </div>
+          <div class="product-feature">
+            <i class="fa fa-undo"></i> 30-Day Returns
+          </div>
+          <div class="product-feature">
+            <i class="fa fa-cut"></i> Free Alterations
+          </div>
+        </div>
+
+        <!-- Share -->
+        <div class="product-share">
+          <span>Share:</span>
+          <button class="share-btn" aria-label="Share on Facebook"><i class="fab fa-facebook-f"></i></button>
+          <button class="share-btn" aria-label="Share on Instagram"><i class="fab fa-instagram"></i></button>
+          <button class="share-btn" aria-label="Share on Twitter"><i class="fab fa-twitter"></i></button>
+          <button class="share-btn" aria-label="Share on WhatsApp"><i class="fab fa-whatsapp"></i></button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ── RELATED PRODUCTS ── -->
+    <div class="related-products">
+      <div class="section-title reveal">
+        <div class="eyebrow-tag"><i class="fa fa-fire"></i> More to Love</div>
+        <h2>You May Also Like</h2>
+        <p>More handcrafted pieces from our collection.</p>
+        <div class="title-line"></div>
+      </div>
+      <div class="related-grid">
+
+        <article class="related-card reveal">
+          <div class="related-card-img">
+            <img src="images/4db96bc37f273d48330c683a3e09961d.jpg" alt="Royal Fugu" />
+          </div>
+          <div class="related-card-body">
+            <span class="card-badge">Premium</span>
+            <h3>Royal Fugu Smock</h3>
+            <div class="related-card-footer">
+              <span class="price">₵780</span>
+              <a href="product.html">View Details</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="related-card reveal">
+          <div class="related-card-img">
+            <img src="images/1149c0d470f483a06438ba19ed87cb13.jpg" alt="Heritage Couple Set" />
+          </div>
+          <div class="related-card-body">
+            <span class="card-badge">New</span>
+            <h3>Heritage Couple Set</h3>
+            <div class="related-card-footer">
+              <span class="price">₵850</span>
+              <a href="product.html">View Details</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="related-card reveal">
+          <div class="related-card-img">
+            <img src="images/511618907c068a9b1cbd8e327b0069de.jpg" alt="Women's Batakari" />
+          </div>
+          <div class="related-card-body">
+            <span class="card-badge">Featured</span>
+            <h3>Women's Batakari</h3>
+            <div class="related-card-footer">
+              <span class="price">₵520</span>
+              <a href="product.html">View Details</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="related-card reveal">
+          <div class="related-card-img">
+            <img src="images/712b0d2314fec4deb9ff37b4766fae13.jpg" alt="Elegant Fugu Dress" />
+          </div>
+          <div class="related-card-body">
+            <span class="card-badge">Bestseller</span>
+            <h3>Elegant Fugu Dress</h3>
+            <div class="related-card-footer">
+              <span class="price">₵580</span>
+              <a href="product.html">View Details</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-top">
+      <div class="footer-inner">
+        <div class="footer-col">
+          <div class="footer-brand-name"><span class="brand-icon">B</span> Batakari Fugu</div>
+          <p>Preserving Ghana's rich cultural heritage through authentic traditional wear, handcrafted with love and pride.</p>
+          <div class="social-icons">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact Us</h4>
+          <div class="contact-item"><i class="fa fa-map-marker-alt"></i> Accra Central, Ghana</div>
+          <div class="contact-item"><i class="fa fa-phone"></i> +233 24 123 4567</div>
+          <div class="contact-item"><i class="fa fa-envelope"></i> info@batakarifugu.com</div>
+          <div class="contact-item"><i class="fa fa-clock"></i> Mon–Sat, 8am–6pm</div>
+        </div>
+        <div class="footer-col">
+          <h4>Newsletter</h4>
+          <p>Get updates on new collections and exclusive offers.</p>
+          <div class="newsletter-form" style="margin-top:16px;">
+            <input type="email" placeholder="Your email address" aria-label="Newsletter email" />
+            <button type="button">Join</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr class="footer-divider" />
+    <div class="footer-bottom">© 2026 Batakari Fugu. All rights reserved. Crafted with love in Ghana 🇬🇭</div>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById('mobileToggle');
+    const menu = document.getElementById('navMenu');
+    toggle.addEventListener('click', () => menu.classList.toggle('open'));
+    const navbar = document.querySelector('.navbar');
+    window.addEventListener('scroll', () => { navbar.classList.toggle('scrolled', window.scrollY > 40); });
+    const obs = new IntersectionObserver((e) => { e.forEach(x => { if (x.isIntersecting) x.target.classList.add('visible'); }); }, { threshold: 0.1 });
+    document.querySelectorAll('.reveal, .reveal-left, .reveal-right').forEach(el => obs.observe(el));
+
+    function switchImg(thumb, src) {
+      const main = document.getElementById('mainImg');
+      main.style.opacity = '0';
+      main.style.transform = 'scale(0.97)';
+      setTimeout(() => {
+        main.src = src;
+        main.style.opacity = '1';
+        main.style.transform = 'scale(1)';
+      }, 180);
+      document.querySelectorAll('.product-thumb').forEach(t => t.classList.remove('active'));
+      thumb.classList.add('active');
+    }
+
+    // Smooth image transition
+    const mainImg = document.getElementById('mainImg');
+    mainImg.style.transition = 'opacity 0.2s ease, transform 0.2s ease';
+
+    function changeQty(delta) {
+      const input = document.getElementById('qty');
+      const val = parseInt(input.value) + delta;
+      if (val >= 1) input.value = val;
+    }
+
+    document.querySelectorAll('.size-btn').forEach(btn => {
+      btn.addEventListener('click', function() {
+        document.querySelectorAll('.size-btn').forEach(b => b.classList.remove('active'));
+        this.classList.add('active');
+        document.querySelector('.product-option-label span').textContent = '— ' + this.textContent + ' selected';
+      });
+    });
+  </script>
+</body>
+</html>
